@@ -1,6 +1,16 @@
 import React, { Component } from 'react';
-import './App.css';
-import axios from 'axios'
+import { Image, StyleSheet, View } from "react-native";
+import './index.css';
+import axios from 'axios';
+
+import bannerUri from "./images/bannerimage.jpg";
+
+const styles = StyleSheet.create({
+  heroHeaderImage: {
+    height: 80,
+    width: 100
+  }
+});
 
 class App extends Component {
   state = {
@@ -17,6 +27,12 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <Image
+          accesibilityLabel="Site Banner"
+          source={{uri: bannerUri}}
+          resizeMode="contain"
+          style={styles.heroHeaderImage}
+        />
         <h1>Here is our new feature!</h1>
         <h1>{this.state.response.body}</h1>
       </div>
