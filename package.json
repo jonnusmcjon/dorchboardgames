@@ -4,7 +4,6 @@
   "description": "Website for Dorchester Board Games group",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "client": "cd client && npm start",
     "server": "nodemon server.js",
     "dev": "concurrently --kill-others-on-fail \"npm run client\" \"npm run server\"",
@@ -25,7 +24,7 @@
   "bugs": {
     "url": "https://github.com/jonnusmcjon/dorchboardgames/issues"
   },
-  "homepage": "https://github.com/jonnusmcjon/dorchboardgames#readme",
+  "homepage": "jonnusmcjon.github.io/dorchboardgames",
   "dependencies": {
     "body-parser": "^1.19.0",
     "concurrently": "^6.0.0",
