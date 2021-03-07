@@ -1,5 +1,11 @@
 .App {
   text-align: center;
+  color:rgb(216, 4, 4);
+  position: absolute;
+  top: 120px;
+  left: 20px;
+  font-weight: 600;
+  margin: 20px 20px 20px 0;
 }
 
 .App-logo {
@@ -14,7 +20,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color:ivory;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,6 +28,20 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  position: relative;
+}
+
+.AppHeaderImage{
+  object-fit: cover;
+  object-position: 0% 80%;
+  width:100%;
+   height:200px ;
+}
+
+.AppBody {
+  font-family: verdana;
+  background-color:ivory;
+  padding-top:20px;
 }
 
 .App-link {
